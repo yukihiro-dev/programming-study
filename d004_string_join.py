@@ -13,11 +13,16 @@
 # 出力例
 # Hello　Paiza,Gino.
 
-n = int(input()) 			# 入力された文字列の数を受け取る
-s_list = []	 			# 入力された文字列を格納するリスト
+# 入力された文字列の数を受け取る
+n = int(input()) 
 
-for _ in range(n): 			# 文字列の数だけ繰り返す
+# 入力された文字列を格納するリスト
+s_list = []	 
+
+# 文字列の数だけ繰り返す
+for _ in range(n): 			
     s_list.append(input())　		# 入力された文字列をリストに追加
 joined_names = ",".join(s_list)		# リスト内の文字列をカンマで結合。
 
-print(f"Hello {joined_names}.")		# "Hello "を先頭に、"." を付けて出力
+# "Hello "を先頭に、"." を付けて出力
+print(f"Hello {joined_names}.")		
